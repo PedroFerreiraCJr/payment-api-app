@@ -1,0 +1,6 @@
+<h3>{{ title }}</h3>
+<ul>
+    <li *ngFor="let payment of payments">
+        <a (click)="select($event.target)" data-id="{{ payment.id }}">{{ payment.id }} - {{ payment.name }}</a>
+    </li>
+</ul>
